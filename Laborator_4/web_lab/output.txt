@@ -1,0 +1,152 @@
+=== part1_imports.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+1. Versiunea requests: 2.32.5
+2. requests.get: 200
+2. get: 200
+3. rq.get: 200
+Eroare urllib: HTTP Error 403: Forbidden
+5. Numele din requests: ['ConnectTimeout', 'ConnectionError', 'DependencyWarning', 'FileModeWarning', 'HTTPError', 'JSONDecodeError', 'NullHandler', 'PreparedRequest', 'ReadTimeout', 'Request', 'RequestException', 'RequestsDependencyWarning', 'Response', 'Session', 'Timeout', 'TooManyRedirects', 'URLRequired', '__author__', '__author_email__', '__build__', '__builtins__', '__cached__', '__cake__', '__copyright__', '__description__', '__doc__', '__file__', '__license__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__title__', '__url__', '__version__', '_check_cryptography', '_internal_utils', 'adapters', 'api', 'auth', 'certs', 'chardet_version', 'charset_normalizer_version', 'check_compatibility', 'codes', 'compat', 'cookies', 'delete', 'exceptions', 'get', 'head', 'hooks', 'logging', 'models', 'options', 'packages', 'patch', 'post', 'put', 'request', 'session', 'sessions', 'ssl', 'status_codes', 'structures', 'urllib3', 'utils', 'warnings']
+Help on function get in module requests.api:
+
+get(url, params=None, **kwargs)
+    Sends a GET request.
+    
+    :param url: URL for the new :class:`Request` object.
+    :param params: (optional) Dictionary, list of tuples or bytes to send
+        in the query string for the :class:`Request`.
+    :param \*\*kwargs: Optional arguments that ``request`` takes.
+    :return: :class:`Response <Response>` object
+    :rtype: requests.Response
+
+6. Cerere cu timeout: 200
+7. Durata totala: 0.11051754200000019
+7. response.elapsed: 0.106795
+8. bs4 este instalat: 4.15.0
+
+=== part2_methods.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+9. Status: 200
+9. OK: True
+9. URL: https://cybercor.org/
+9. Encoding: utf-8
+Date: Sun, 11 Oct 2026 19:48:19 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=o1sO2bvCml98XpnxcwnEFzv6tAzYYnWbzBLdPjIXMzpPLXjtMF%2BPBbNCpy9c%2FUCSSD2lZ8Y77EV9CLgl6%2FR5nnbk3WY%2Fpnbe9HDJblzVEwLj0rWBrMhTkLQ%2BmeIsgr4%3D"}]}
+Cache-Control: public, max-age=86400
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Last-Modified: Wed, 18 Mar 2026 17:08:12 GMT
+X-Powered-By: Express
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+cf-cache-status: DYNAMIC
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: a49061b40e3e5e2e-KIV
+alt-svc: h3=":443"; ma=86400
+12. Server: cloudflare
+12. Content-Type: text/html; charset=utf-8
+12. content-type: text/html; charset=utf-8
+13. Aparitii cyber: 9
+14. Titlu: CYBERCOR
+15. Numar de linii: 32
+15. Lungimea maxima: 218
+16. Conexiune securizată
+19. Niciun cookie setat.
+10. Pagina principala a raspuns fara eroare HTTP.
+10. Serverul a raspuns cu 200 pentru calea de test.
+17. 301 http://cybercor.org/
+17. URL final: https://cybercor.org/
+18. Corp HEAD: 0
+18. Corp GET: 1540
+20. User-Agent primit: WebLab-Student
+20. Antet confirmat: True
+
+=== part3_functions.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+21. Cod HTTP: 200
+24. Titlu: CYBERCOR
+23. Cod HTTP cu timeout=3: 200
+22. / 200
+22. /robots.txt 200
+22. /sitemap.xml 200
+24. Titlu de test: Test
+Help on function get_title in module webtools:
+
+get_title(html: str) -> str
+    24, 25: extrage textul dintre tagurile title.
+
+26. Argumentul nu este un URL valid: Invalid URL '123': No scheme supplied. Perhaps you meant https://123?
+27. Domeniu invalid: False
+28. Cai: {'/': 200, '/robots.txt': 200, '/sitemap.xml': 200}
+29. Server: cloudflare
+30. Antete de securitate: {'Strict-Transport-Security': False, 'Content-Security-Policy': False, 'X-Frame-Options': True, 'X-Content-Type-Options': True, 'Referrer-Policy': True}
+31. Scor: 3/5
+32. robots.txt: User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+
+32. Cai Disallow: []
+33. Timpi: {'https://cybercor.org': 0.13400949999999945, 'https://cybercor.org/robots.txt': 0.05060879200000201}
+34. verificat | url=https://cybercor.org | status=vezi rezultatele
+
+=== part4_modules.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+35. Partile URL-ului: {'scheme': 'https', 'netloc': 'cybercor.org', 'path': '/path', 'query': 'x=1', 'fragment': 'top'}
+36. URL-uri complete: ['https://cybercor.org/about', 'https://cybercor.org/contact.html', 'https://cybercor.org/index.html']
+39. Imagini de test: ['/logo.png', 'poza.jpg', 'https://cdn.example.com/banner.webp']
+39. Testul a trecut!
+37. Legaturi: ['/assets/index-DlIqjleG.css']
+38. Interne: ['https://cybercor.org/assets/index-DlIqjleG.css']
+38. Externe: []
+39. Numar de imagini: 0
+39. Numar de taguri img: 0
+40. Prima amprenta: c04dd60a2651465e1aa75da82b7e1c5daf04b38c3663c6aaef38efb6e4be89e4
+40. A doua amprenta: c04dd60a2651465e1aa75da82b7e1c5daf04b38c3663c6aaef38efb6e4be89e4
+40. Sunt egale: True
+41. Antet recitit: text/html; charset=utf-8
+42. IP: 172.67.211.96
+43. Zile certificat: 52
+
+=== webtools.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Autotest: 200
+
+=== main.py ===
+/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+47. DEFAULT_HEADERS: {'User-Agent': 'WebLab-Student'}
+44. Titlu prin modul: CYBERCOR
+45. Titlu prin import direct: CYBERCOR
+45. Antete prin import direct: {'Strict-Transport-Security': False, 'Content-Security-Policy': False, 'X-Frame-Options': True, 'X-Content-Type-Options': True, 'Referrer-Policy': True}
+Raport pentru: https://cybercor.org
+Cod HTTP: 200
+URL final: https://cybercor.org/
+Titlu: CYBERCOR
+IP: 172.67.211.96
+Redirectionari: [{'status': 301, 'url': 'http://cybercor.org/', 'location': 'https://cybercor.org/'}]
+Scor antete: 3/5
+Zile certificat: 52
+Legaturi interne: 1
+Legaturi externe: 0
+Cai interzise: []
+Salvat in /Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/Laborator_4/web_lab/report.json
