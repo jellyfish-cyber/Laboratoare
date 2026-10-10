@@ -1,0 +1,171 @@
+=== python -c from arsenal.forensics.decode import text_si_octeti; text_si_octeti() ===
+b'Salut' 83
+53616c7574
+b'Salut'
+
+=== python arsenal/forensics/decode.py probe/xor.bin --fisier --mod xor ===
+{
+  "strat": "xor",
+  "rezultat": {
+    "cheie": 128,
+    "rezultat": "Un singur octet tine tot secretul... gaseste-l! FLAG{xor_un_octet}"
+  },
+  "candidati": [
+    {
+      "cheie": 128,
+      "rezultat": "Un singur octet tine tot secretul... gaseste-l! FLAG{xor_un_octet}"
+    },
+    {
+      "cheie": 129,
+      "rezultat": "To!rhofts!nbudu!uhod!unu!rdbsdutm///!f`rdrud,m !GM@Fzyns^to^nbudu|"
+    },
+    {
+      "cheie": 131,
+      "rezultat": "Vm#pjmdvq#l`wfw#wjmf#wlw#pf`qfwvo---#dbpfpwf.o\"#EOBDx{lq\\vm\\l`wfw~"
+    },
+    {
+      "cheie": 133,
+      "rezultat": "Pk%vlkbpw%jfq`q%qlk`%qjq%v`fw`qpi+++%bdv`vq`(i$%CIDB~}jwZpkZjfq`qx"
+    },
+    {
+      "cheie": 134,
+      "rezultat": "Sh&uohast&iercr&rohc&rir&ucetcrsj(((&agucurc+j'&@JGA}~itYshYiercr{"
+    },
+    {
+      "cheie": 136,
+      "rezultat": "]f({afo}z(gk|m|(|afm(|g|({mkzm|}d&&&(oi{m{|m%d)(NDIOspgzW}fWgk|m|u"
+    },
+    {
+      "cheie": 137,
+      "rezultat": "\\g)z`gn|{)fj}l})}`gl)}f})zlj{l}|e''')nhzlz}l$e()OEHNrqf{V|gVfj}l}t"
+    },
+    {
+      "cheie": 142,
+      "rezultat": "[`.}g`i{|.amzkz.zg`k.zaz.}km|kz{b   .io}k}zk#b/.HBOIuva|Q{`Qamzkzs"
+    },
+    {
+      "cheie": 143,
+      "rezultat": "Za/|fahz}/`l{j{/{faj/{`{/|jl}j{zc!!!/hn|j|{j\"c./ICNHtw`}PzaP`l{j{r"
+    },
+    {
+      "cheie": 146,
+      "rezultat": "G|2a{|ug`2}qfwf2f{|w2f}f2awq`wfg~<<<2usawafw?~32T^SUij}`Mg|M}qfwfo"
+    },
+    {
+      "cheie": 148,
+      "rezultat": "Az4g}zsaf4{w`q`4`}zq4`{`4gqwfq`ax:::4sugqg`q9x54RXUSol{fKazK{w`q`i"
+    },
+    {
+      "cheie": 149,
+      "rezultat": "@{5f|{r`g5zvapa5a|{p5aza5fpvgpa`y;;;5rtfpfap8y45SYTRnmzgJ`{Jzvapah"
+    },
+    {
+      "cheie": 151,
+      "rezultat": "By7d~ypbe7xtcrc7c~yr7cxc7drtercb{9997pvdrdcr:{67Q[VPloxeHbyHxtcrcj"
+    },
+    {
+      "cheie": 153,
+      "rezultat": "Lw9jpw~lk9vzm|m9mpw|9mvm9j|zk|mlu7779~xj|jm|4u89_UX^bavkFlwFvzm|md"
+    },
+    {
+      "cheie": 155,
+      "rezultat": "Nu;hru|ni;txo~o;oru~;oto;h~xi~onw555;|zh~ho~6w:;]WZ\\`ctiDnuDtxo~of"
+    },
+    {
+      "cheie": 157,
+      "rezultat": "Hs=ntszho=r~ixi=itsx=iri=nx~oxihq333=z|nxnix0q<=[Q\\ZferoBhsBr~ixi`"
+    },
+    {
+      "cheie": 159,
+      "rezultat": "Jq?lvqxjm?p|kzk?kvqz?kpk?lz|mzkjs111?x~lzlkz2s>?YS^Xdgpm@jq@p|kzkb"
+    }
+  ],
+  "chei_incercate": 256
+}
+
+=== python arsenal/forensics/decode.py probe/hashuri.txt --fisier --mod hash ===
+{
+  "strat": "hash",
+  "rezultat": [
+    {
+      "algoritm": "md5",
+      "hash": "5f4dcc3b5aa765d61d8327deb882cf99",
+      "parola": "password"
+    },
+    {
+      "algoritm": "md5",
+      "hash": "8621ffdbc5698829397d97767ac13db3",
+      "parola": "dragon"
+    },
+    {
+      "algoritm": "md5",
+      "hash": "d8578edf8458ce06fbc5bb76a58c5ca4",
+      "parola": "qwerty"
+    },
+    {
+      "algoritm": "md5",
+      "hash": "0d107d09f5bbe40cade3de5c71e9e9b7",
+      "parola": "letmein"
+    },
+    {
+      "algoritm": "md5",
+      "hash": "d0763edaa9d9bd2a9516280e9044d885",
+      "parola": "monkey"
+    }
+  ]
+}
+
+=== python arsenal/forensics/decode.py probe/mesaj.txt --fisier ===
+{
+  "strat": [
+    "base64",
+    "base64",
+    "hex"
+  ],
+  "rezultat": "FLAG{straturi_de_encoding}"
+}
+
+=== python forensics.py ===
+{
+  "tipuri": {
+    "foto.jpg": "jpeg",
+    "ascuns.png": "png",
+    "xor.bin": "d5eea0f3e9eee7f5"
+  },
+  "strings": [
+    "IHDR",
+    "IDATx",
+    "IEND",
+    "secret.txtFLAG{ascuns_prin_carving}",
+    "secret.txtPK"
+  ],
+  "metadate": {
+    "Model": "iPhone 13",
+    "DateTime": "2026:09:14 10:30:00",
+    "Make": "Apple",
+    "GPSInfo": {
+      "GPSLatitudeRef": "N",
+      "GPSLatitude": "(47.0, 1.0, 0.0)",
+      "GPSLongitudeRef": "E",
+      "GPSLongitude": "(28.0, 51.0, 27.0)"
+    },
+    "latitude": 47.016666666666666,
+    "longitude": 28.8575
+  },
+  "carving": {
+    "offset": 782,
+    "arhiva": "/Users/pepsi/Documents/UTM/Tehnici De Programare/Laboratoare/Laborator_5/rezultate/gasit.zip",
+    "fisiere": [
+      "secret.txt"
+    ]
+  }
+}
+
+=== python stego.py ascunde probe/foto.jpg FLAG{ascuns_in_pixeli} stego.png ===
+Mesaj ascuns in stego.png
+
+=== python stego.py dezvaluie stego.png ===
+FLAG{ascuns_in_pixeli}
+
+=== python -m teste.test_decode ===
+test_base64: OK
